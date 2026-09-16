@@ -345,7 +345,7 @@ export default function Home() {
 
   // Cloud auth for cross-OS unlock
   const { user: cloudUser, loggedInAt: cloudLoggedInAt } = useCloudAuth();
-  const crossOsUnlocked = getEntitlements(cloudUser).crossOsFingerprints;
+  const crossOsUnlocked = true;
   // Shown once when the commercial trial runs out; modal, so it goes first.
   const commercialTrialModalOpen =
     !termsLoading &&
